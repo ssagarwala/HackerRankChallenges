@@ -23,6 +23,17 @@ public class TestFunctionInterface  {
             {
                 func.apply(employee);
             };
+
+
+            Function <ArrayList<Employee>,Double> fun2 = al2->{
+                                                double total=0;
+                                                for(Employee e2 : al2){
+                                                    total += e2.salary;
+                                                }
+                                                return total;};
+
+            System.out.println(fun2.apply(al));
+
         }
 
 }
